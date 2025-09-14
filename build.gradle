@@ -2,7 +2,7 @@ plugins {
     id 'org.jetbrains.kotlin.jvm' version '2.2.0'
 }
 
-group = 'org.example'
+group = 'com.example'
 version = '1.0-SNAPSHOT'
 
 repositories {
