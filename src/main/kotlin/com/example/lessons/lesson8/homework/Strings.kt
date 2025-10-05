@@ -40,9 +40,13 @@ val replaceString2 = when {
 
     val originalString5 = "Luck "
         val replaceString5 = when {
-        originalString5.contains(" ") -> originalString5
+        originalString5.contains(" ") -> {
+            originalString5
+        }
 
-        else -> "$originalString5".startsWith("sometimes")
+        else -> {
+            "Sometimes $originalString5 but not always"
+        }
           //  "${originalString5} but not always"
     }
     println(replaceString5)
