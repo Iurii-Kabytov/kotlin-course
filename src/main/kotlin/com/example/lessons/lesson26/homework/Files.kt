@@ -84,25 +84,3 @@ fun ex5() {
             println(value)
         }
 }
-
-fun ex5() {
-    File("workspace/task5/config/config.txt")
-        .apply {
-            parentFile.mkdirs()
-            writeText(
-                """
-                a=1
-                b=20
-                c=300
-                """.trimIndent()
-            )
-        }
-        .readLines()
-        .mapNotNull { line ->
-            line.substringAfter("=", missingDelimiterValue = "")
-                .takeIf { it.isNotEmpty() }
-        }
-        .forEach { value ->
-            println(value)
-        }
-}
