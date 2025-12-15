@@ -68,10 +68,9 @@ fun ex5() {
             parentFile.mkdirs()
             writeText(
                 """
-                host=localhost
-                port=8080
-                debug=true
-                timeout=5000
+                a=1
+                b=20
+                c=300
                 """.trimIndent()
             )
         }
